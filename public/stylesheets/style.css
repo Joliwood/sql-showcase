@@ -1,0 +1,52 @@
+html {
+  background-image: url("../background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 100vh;
+  background-color: transparent !important;
+}
+
+:root {
+  --theme-light: #f3f7faa4;
+  --theme-semi-light: #fcf3f0;
+  --theme-special: #ffc8a7;
+  --theme-semi-dark: #628899;
+  --theme-dark: #1f3b4d;
+}
+
+.global-container {
+  width: 60%;
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+
+.itemsContainer {
+  /* background-color: var(--theme-semi-light); */
+  min-height: 500px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header-navbar {
+  /* background-color: var(--theme-special); */
+  border-radius: 15px;
+}
+
+.card-img-top {
+  max-height: 300px;
+  object-fit: cover;
+}
