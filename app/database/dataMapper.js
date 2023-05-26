@@ -20,9 +20,9 @@ const dataMapper = {
     );
     
     INSERT INTO "items" ("name", "price", "description", "item_picture_url") VALUES 
-    ('Café', '1€', 'Une tasse de café des plus classiques...', 'https://images.unsplash.com/photo-1559496417-e7f25cb247f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60'),
+    ('Café', '1,50€', 'Une tasse de café des plus classiques...', 'https://images.unsplash.com/photo-1559496417-e7f25cb247f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60'),
     
-    ('Café s"il vous plait', '1,50€', 'Une tasse de café préparée avec amour', 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'),
+    ('Café s"il vous plait', '1€', 'Une tasse de café préparée avec amour', 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'),
     
     ('Cafetière', '25€', 'Magnifique machine à café', 'https://m.media-amazon.com/images/I/61GR+XZqvOL._AC_SX342_SY445_.jpg');
     
