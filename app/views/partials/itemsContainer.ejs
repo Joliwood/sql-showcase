@@ -11,7 +11,19 @@
         <h5 class="card-title"><%= item.name %></h5>
         <h6><%= item.price %></h6>
         <p class="card-text"><%= item.description %></p>
-        <a href="#" class="btn btn-primary">Take it !</a>
+        <div class="items-container-buttons">
+          <a href="#" class="btn btn-primary">Take it !</a>
+          <form method="post" action="/deleteArticle">
+            <button
+              type="submit"
+              class="btn btn-danger"
+              name="id"
+              value="<%= item.id %>"
+            >
+              X
+            </button>
+          </form>
+        </div>
       </div>
     </article>
     <% }); %>

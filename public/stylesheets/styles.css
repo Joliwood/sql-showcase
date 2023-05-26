@@ -39,6 +39,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .header-navbar {
@@ -49,4 +50,13 @@ body {
 .card-img-top {
   max-height: 300px;
   object-fit: cover;
+}
+
+.create-item-button {
+  margin-left: 8px;
+}
+
+.items-container-buttons {
+  display: flex;
+  justify-content: space-between;
 }

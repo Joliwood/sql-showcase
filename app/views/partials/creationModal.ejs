@@ -1,0 +1,67 @@
+<button
+  type="button"
+  class="btn btn-primary create-item-button"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal"
+  data-bs-whatever="@mdo"
+>
+  Créer un article
+</button>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Créez votre propre article
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="creation-article-form" action="/createArticle">
+          <div class="row">
+            <div class="col">
+              <label for="message-text" class="form-label">Titre :</label>
+              <input type="text" class="form-control" id="message-title" name="title" />
+            </div>
+            <div class="col">
+              <label for="message-text" class="form-label">Prix :</label>
+              <input type="text" class="form-control" id="message-price" name="price" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="inputImage" class="form-label">Url de l'image</label>
+            <input type="text" class="form-control" id="inputImage" name="urlImage" />
+          </div>
+
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label"
+              >Description :</label
+            >
+            <textarea type="text" class="form-control" id="message-text" name="description"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Fermer
+            </button>
+            <button class="btn btn-primary" type="submit" href="createArticle" >
+                Créer
+            </button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>
