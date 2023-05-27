@@ -9,6 +9,8 @@ router.post("/createArticle", articleController.createArticle);
 
 router.post("/deleteArticle", articleController.deleteArticle);
 
+router.post("/modifyArticle", articleController.modifyArticle);
+
 router.post("/resetdb", homeController.resetDb);
 
 module.exports = router;

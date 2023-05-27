@@ -1,7 +1,7 @@
 <body>
   <div class="itemsContainer">
     <% itemsList.forEach((item, index) => { %>
-    <article class="card" style="width: 18rem">
+    <article class="card" style="width: 18rem" id="<%= item.id %>">
       <img
         class="card-img-top"
         src="<%= item.item_picture_url %>"

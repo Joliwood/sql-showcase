@@ -2,7 +2,7 @@ const client = require("./connection");
 
 const dataMapper = {
   async getArticles() {
-    const query = "SELECT * FROM items";
+    const query = "SELECT * FROM items ORDER BY id";
     const results = await client.query(query);
     return results.rows;
   },
@@ -40,6 +40,12 @@ const dataMapper = {
 
   async deleteArticle(id) {
     const query = `DELETE FROM items WHERE id = '${id}'`;
+    const results = await client.query(query);
+    return results.rows;
+  },
+
+  async modifyArticle(id, title, price, description, urlImage) {
+    const query = `UPDATE items SET name = '${title}', price = '${price}', description = '${description}', item_picture_url = '${urlImage}' WHERE id = '${id}'`;
     const results = await client.query(query);
     return results.rows;
   },

@@ -15,6 +15,21 @@ const articleController = {
     await dataMapper.deleteArticle(req.body.id);
     res.redirect("back");
   },
+
+  async modifyArticle(req, res) {
+    const title = req.body.title;
+    const price = req.body.price;
+    const description = req.body.description;
+    const urlImage = req.body.urlImage;
+    await dataMapper.modifyArticle(
+      req.body.id,
+      title,
+      price,
+      description,
+      urlImage
+    );
+    res.redirect("back");
+  },
 };
 
 module.exports = articleController;
