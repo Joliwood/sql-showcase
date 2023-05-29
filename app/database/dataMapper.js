@@ -1,8 +1,8 @@
 const client = require("./connection");
 
 const dataMapper = {
-  async getArticles() {
-    const query = "SELECT * FROM items ORDER BY id";
+  async getArticles(filter) {
+    const query = `SELECT * FROM items ORDER BY ${filter}`;
     const results = await client.query(query);
     return results.rows;
   },
@@ -46,6 +46,12 @@ const dataMapper = {
 
   async modifyArticle(id, title, price, description, urlImage) {
     const query = `UPDATE items SET name = '${title}', price = '${price}', description = '${description}', item_picture_url = '${urlImage}' WHERE id = '${id}'`;
+    const results = await client.query(query);
+    return results.rows;
+  },
+
+  async filterArticles(filter) {
+    const query = `SELECT * FROM items ORDER BY ${filter}`;
     const results = await client.query(query);
     return results.rows;
   },

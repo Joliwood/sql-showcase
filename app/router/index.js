@@ -13,4 +13,6 @@ router.post("/modifyArticle", articleController.modifyArticle);
 
 router.post("/resetdb", homeController.resetDb);
 
+router.post("/", homeController.filterDb);
+
 module.exports = router;
