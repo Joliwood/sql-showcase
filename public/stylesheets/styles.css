@@ -27,8 +27,8 @@ body {
 
 .global-container {
   width: 60%;
-  /* border-radius: 20px; */
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .itemsContainer {
@@ -59,4 +59,10 @@ body {
 .items-container-buttons {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .global-container {
+    width: 90%;
+  }
 }
