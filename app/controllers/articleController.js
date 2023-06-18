@@ -2,10 +2,7 @@ const dataMapper = require("../database/dataMapper");
 
 const articleController = {
   async createArticle(req, res) {
-    const title = req.body.title;
-    const price = req.body.price;
-    const description = req.body.description;
-    const urlImage = req.body.urlImage;
+    const { title, price, description, urlImage } = req.body;
 
     await dataMapper.createArticle(title, price, description, urlImage);
     res.redirect("back");
@@ -17,17 +14,8 @@ const articleController = {
   },
 
   async modifyArticle(req, res) {
-    const title = req.body.title;
-    const price = req.body.price;
-    const description = req.body.description;
-    const urlImage = req.body.urlImage;
-    await dataMapper.modifyArticle(
-      req.body.id,
-      title,
-      price,
-      description,
-      urlImage
-    );
+    const { id, title, price, description, urlImage } = req.body;
+    await dataMapper.modifyArticle(id, title, price, description, urlImage);
     res.redirect("back");
   },
 };

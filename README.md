@@ -1,15 +1,15 @@
-# Welcome to SQL Showcase !
+# <p align="center">Welcome to SQL Showcase !</p>
 
-## Context
+## <p align="center">Context</p>
 
-Show a postgresql database on the cloud (my version works with render.com).
+<p align="center">Show a postgresql database on the cloud (my version works with render.com).</p>
 
-## What is it for ?
+## <p align="center">What is it for ?</p>
 
-The project is written with node.js + express to access a postgresql DB, hosted in render.com.
+<p align="center">This CRUD app is written with node.js + express to access a postgresql DB, hosted in render.com. It uses a basic dataMapper which use SQL request to get datas. You also can order items if you want to. </p>
 
 <br />
 <hr>
 <br />
 
-<a href="#" target="blank">Link to the project</a>
+<p align="center"><a href="#" target="blank">Link to the project</a></p>

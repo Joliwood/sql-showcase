@@ -43,13 +43,18 @@ body {
 }
 
 .header-navbar {
-  /* background-color: var(--theme-special); */
   border-radius: 15px;
 }
 
 .card-img-top {
+  aspect-ratio: 9/16;
   max-height: 300px;
   object-fit: cover;
+}
+
+.card-text {
+  height: 50px;
+  overflow-y: hidden;
 }
 
 .create-item-button {
@@ -65,4 +70,12 @@ body {
   .global-container {
     width: 90%;
   }
+}
+
+.overflow-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
