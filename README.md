@@ -17,7 +17,7 @@
 <p align="center">:zap: = Minor correction / debug
 <p align="center">:construction: = Work in progress
 <p align="center">:hammer: = New functionnality / component
-<p align="center">:memo: = Readme / Code comments / 
+<p align="center">:memo: = Readme / Code comments / Documentations
 <p align="center">:sparkles: = Clean code
 
 <br />
